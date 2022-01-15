@@ -1,0 +1,86 @@
+.carta{
+    width: 300px;
+    height: 450px;
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: rgb(230, 245, 174);
+}
+
+.firstBox{
+    margin-top: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 280px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(215, 218, 181);
+}
+
+.cardImage{
+    width: 280px;
+    height: 180px;
+    object-fit:cover;
+    object-position: 20% 20%;
+    border-radius: 5px;
+}
+
+.secondBox{
+    margin-top: -5px;
+    width: 280px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(215, 218, 181);
+}
+
+.abilities{
+    width: 275px;
+    height: 180px;
+    border: solid 1px black;
+    text-align: justify;
+    display: flex;
+    background-color: rgb(217, 219, 191);
+}
+
+.abilities p{
+    margin-top: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.thirdBox{
+    width: 280px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(215, 218, 181);
+}
+
+.type{
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.footer{
+    margin-top: 2px;
+    width: 280px;
+    text-align: left;
+    font-size: xx-small;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name, .race, .mana{
+    margin-left: 3px;
+}
+
+.rarity, .type, .damage{
+    margin-right: 3px;
+}
