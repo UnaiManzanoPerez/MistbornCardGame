@@ -1,6 +1,7 @@
 use MistbornCardGame;
 
-create table Card(
+drop table cards;
+create table Cards(
     name varchar(30) PRIMARY KEY NOT NULL,
     race varchar(30),
     cardClass varchar(30),
