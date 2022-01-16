@@ -1,26 +1,26 @@
-<div class="carta">
+<div *ngFor="let c of cards" class="carta">
     <div class="firstBox">
-        <span class="name">Name</span>
-        <span class="rarity">Rarity</span>
+        <span class="name">{{c.name}}</span>
+        <span class="rarity">{{c.rarity}}</span>
     </div>
-    <img src="../../assets/cardImages/kelsier.png" class="cardImage"> 
+    <img src="{{c.image}}" class="cardImage"> 
     <div class="secondBox">
         <div>
-            <span class="race">Race</span> -
-            <span class="cardClass">Class</span>
+            <span class="race">{{c.race}}</span> -
+            <span class="cardClass">{{c.cardClass}}</span>
         </div>
-        <img src="../../assets/typeIcons/iron.PNG" class="type">
+        <img src="{{c.type}}" class="type">
     </div>
-    <div class="abilities"><p>Kelsier is a half-skaa Mistborn from Scadrial.[6] He is stern and intense, but always smiling; another act of rebellion against the Lord Ruler's oppression. He hates injustice and takes this hatred to the extreme, which originally resulted in him being unable to see good in any of the nobility.</p></div>
+    <div class="abilities"><p>{{c.abilities}}</p></div>
     <div class="thirdBox">
-        <div class="mana">10</div>
+        <div class="mana">M {{c.mana}}</div>
         <div>
-            <span class="health">20</span> /
-            <span class="damage">4</span>
+            <span class="health">HP {{c.health}}</span> /
+            <span class="damage">D {{c.damage}}</span>
         </div>
     </div>
     <div class="footer">
-        <span class="id">ID</span>
+        <span class="id">ID {{c.id}}</span>
         <span>Mistborn Card Game</span>
     </div>
 </div>
