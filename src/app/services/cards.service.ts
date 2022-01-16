@@ -8,7 +8,7 @@ export class CardService{
 
     constructor(private conexHttp:HttpClient){}
     getCardsAjax():Observable<any>{
-        let url = "http://localhost:80/Portfolio/CardGame/php/cards.php";
+        let url = "http://localhost:80/Portfolio/CardGame/php/displayCards.php";
         return this.conexHttp.get(url,
             {headers: new HttpHeaders({'Content-Type':'application/json'})}
             );
